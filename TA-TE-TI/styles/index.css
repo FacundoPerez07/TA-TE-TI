@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    transition: all 0.3s ease-in-out;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a577b;
+}
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2987c3;
+}
+.contImagen{
+    margin-left: 30px;
+    width: 60px;
+    height: 30px;
+}
+.imagen{
+    height: 30px;
+    width: 30px;
+}
+.texto{
+    font-size: 40px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+/* Control para colores oscuros y claros */
+.contBoton{
+    margin-right: 30px;
+    display: flex;
+    background-color: aliceblue;
+    width: 60px;
+    height: 30px;
+    border: solid black 1.5px;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out;
+}
+.contBoton:hover{
+    cursor: pointer;
+}
+.boton{
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border: solid black 0.5;
+    border-radius: 50px;
+    background-color: #eaf8aa;
+    transform: translate(0px);
+}
+.boton:hover{
+    cursor: pointer;
+}
+.imgBoton{
+    width: 28px;
+    height: 28px;
+}
+
+
+/* Clases para el juego en si */
+.contJuego{
+    margin-top: 70px;
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+.botonJuego{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    display: none;
+
+    background-color: white;
+}
+.marca{
+    margin: 0px;
+    color: darkcyan;
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+}
+.guia{
+    transition: all 0.3s ease-in-out;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Reiniciar el juego */
+.contReset{
+    display: flex;
+    justify-content: center;
+}
+.reset{
+    display: none;
+    width: 110px;
+    height: 40px;
+    border: solid black 0.2px;
+    border-radius: 50px;
+    background-color: lightgreen;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+.reset:hover{
+    transform: scale(1.1);
+}
+
+/* Mostrar datos de jugadores */
+.juego{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    border: solid black 0.2px;
+    border-radius: 10px;
+    background-color: #2987c3;
+    width: 200px;
+    height: auto;
+    text-align: center;
+}
+
+/* Estilo para el input */
+.contNombre{
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    position: relative;
+    width: 150px;
+    height: 30px;
+}
+.textoSobreInput{
+    transition: all 0.3s ease-in-out;
+    color: lightgray;
+    position: absolute;
+    height: 20px;
+    bottom: 2px;
+    left: 5px;
+}
+.nombre{
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 150px;
+    height: 30px;
+    margin-top: 0px;
+}
+
+/* Colocar nombres de jugadores */
+.botonNombre{
+    display: flex;
+    justify-content: center;
+}
+.nombres{
+    display: block;
+    width: 110px;
+    height: 40px;
+    border: solid black 0.2px;
+    border-radius: 50px;
+    background-color: lightgreen;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+.nombres:hover{
+    transform: scale(1.1);
+}
+
+.nombreDefinitivo{
+    transition: all 0.3s ease-in-out;
+    font-family: "Montserrat", sans-serif;
+    font-size: 5px;
+    text-align: center;
+    display: none;
+}

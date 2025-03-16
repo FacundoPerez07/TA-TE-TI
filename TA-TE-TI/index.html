@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" href="./img/iconoVentana.png" type="image/png">
+</head>
+<body id="body">
+    <header>
+        <div class="contImagen">
+            <img class="imagen" src="./img/iconoVentana.png" alt="Imagen">
+        </div>
+        <h1 class="texto">TIC-TAC-TOE</h1>
+        <div id="contBoton" class="contBoton">
+            <button id="botonColores" class="boton">
+                <img class="imgBoton" src="./img/flechaBoton.png" alt=".">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="juego">
+            <div id="padreNombre1" class="player">
+                <div id="contNombre1" class="contNombre">
+                    <label id="labelPlayer1" for="player1" class="textoSobreInput">Player 1</label>
+                    <input id="player1" class="nombre" type="text" onblur="obtenerPlayer1()" maxlength="11">
+                </div>
+                <h2 id="nombreDefinitivo1" class="nombreDefinitivo"></h2>
+                <h3 id="puntuacionPlayer1"></h3>
+            </div>
+            <div class="contJuego">
+                <button id="boton1" class="botonJuego">
+                    <h2 id="marca1" class="marca"></h2>
+                </button>
+                <button id="boton2" class="botonJuego">
+                    <h2 id="marca2" class="marca"></h2>
+                </button>
+                <button id="boton3" class="botonJuego">
+                    <h2 id="marca3" class="marca"></h2>
+                </button>
+
+                <button id="boton4" class="botonJuego">
+                    <h2 id="marca4" class="marca"></h2>
+                </button>
+                <button id="boton5" class="botonJuego">
+                    <h2 id="marca5" class="marca"></h2>
+                </button>
+                <button id="boton6" class="botonJuego">
+                    <h2 id="marca6" class="marca"></h2>
+                </button>
+
+                <button id="boton7" class="botonJuego">
+                    <h2 id="marca7" class="marca"></h2>
+                </button>
+                <button id="boton8" class="botonJuego">
+                    <h2 id="marca8" class="marca"></h2>
+                </button>
+                <button id="boton9" class="botonJuego">
+                    <h2 id="marca9" class="marca"></h2>
+                </button>
+            </div>
+            <div id="padreNombre2" class="player">
+                <div id="contNombre2" class="contNombre">
+                    <label id="labelPlayer2" for="player2" class="textoSobreInput">Player 2</label>
+                    <input id="player2" class="nombre" type="text" onblur="obtenerPlayer2()" maxlength="11">
+                </div>
+                <h2 id="nombreDefinitivo2" class="nombreDefinitivo"></h2>
+                <h3 id="puntuacionPlayer2"></h3>
+            </div>
+        </div>
+
+        <h2 id="guia" class="guia">Welcome! <br> Please, enter your names</h2>
+
+        <div class="botonNombre">
+            <button id="nombres" class="nombres">Accept</button>
+        </div>
+
+        <div class="contReset">
+            <button id="reset" class="reset">Reset game</button>
+        </div>
+    </main>
+
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
